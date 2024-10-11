@@ -1,0 +1,95 @@
+
+
+<div class="relative overflow-x-auto">
+  <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <tr>
+              <th scope="col" class="px-6 py-3">
+                  Arquivo Data
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Arquivo Descricao
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Arquivo Extensao
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Arquivo Id
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Arquivo Id Pai
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Arquivo Link
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Arquivo Status
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Arquivo Tamanho
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Arquivo Versao
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Etapa Id
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Local Id
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Projeto Id
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Usuario Id
+              </th>
+          </tr>
+      </thead>
+      <tbody>
+        @for (item of listaArquivoEtapa; track $index) {
+
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <td class="px-6 py-4">
+                {{item.arquivo_data}}
+              </td>
+              <td class="px-6 py-4">
+                {{item.arquivo_descricao}}
+              </td>
+              <td class="px-6 py-4">
+                {{item.arquivo_extensao}}
+              </td>
+              <td class="px-6 py-4">
+                {{item.arquivo_id}}
+              </td>
+              <td class="px-6 py-4">
+                {{item.arquivo_id_pai}}
+              </td>
+              <td class="px-6 py-4">
+                {{item.arquivo_link}}
+              </td>
+              <td class="px-6 py-4">
+                {{item.arquivo_status}}
+              </td>
+              <td class="px-6 py-4">
+                {{item.arquivo_tamanho}}
+              </td>
+              <td class="px-6 py-4">
+                {{item.arquivo_versao}}
+              </td>
+              <td class="px-6 py-4">
+                {{item.etapa_id}}
+              </td>
+              <td class="px-6 py-4">
+                {{item.local_id}}
+              </td>
+              <td class="px-6 py-4">
+                {{item.projeto_id}}
+              </td>
+              <td class="px-6 py-4">
+                {{item.usuario_id}}
+              </td>
+          </tr>
+        }
+      </tbody>
+  </table>
+</div>
